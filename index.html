@@ -466,41 +466,49 @@
 
       <section class="customers">
         <div class="conteiner">
-          <h2 class="customers-header">Постоянные клиенты</h2>
-          <ul class="customers-list">
-            <li class="customers-item">
-              <a href="" class="customers-link">
-                <svg class="customers-icon">
+          <h2 class="customers__header customers__header--position">
+            Постоянные клиенты
+          </h2>
+
+          <ul class="regular-customers">
+            <li class="regular-customers__item">
+              <a href="" class="regular-customers__link">
+                <svg class="regular-customers__icon">
                   <use href="images/svg/sprite.svg#icon-client1"></use></svg
               ></a>
             </li>
-            <li class="customers-item">
-              <a href="" class="customers-link"
-                ><svg class="customers-icon">
+
+            <li class="regular-customers__item">
+              <a href="" class="regular-customers__link"
+                ><svg class="regular-customers__icon">
                   <use href="images/svg/sprite.svg#icon-client2"></use></svg
               ></a>
             </li>
-            <li class="customers-item">
-              <a href="" class="customers-link">
-                <svg class="customers-icon">
+
+            <li class="regular-customers__item">
+              <a href="" class="regular-customers__link">
+                <svg class="regular-customers__icon">
                   <use href="images/svg/sprite.svg#icon-client3"></use></svg
               ></a>
             </li>
-            <li class="customers-item">
-              <a href="" class="customers-link"
-                ><svg class="customers-icon">
+
+            <li class="regular-customers__item">
+              <a href="" class="regular-customers__link"
+                ><svg class="regular-customers__icon">
                   <use href="images/svg/sprite.svg#icon-client4"></use></svg
               ></a>
             </li>
-            <li class="customers-item">
-              <a href="" class="customers-link"
-                ><svg class="customers-icon">
+
+            <li class="regular-customers__item">
+              <a href="" class="regular-customers__link"
+                ><svg class="regular-customers__icon">
                   <use href="images/svg/sprite.svg#icon-client5"></use></svg
               ></a>
             </li>
-            <li class="customers-item">
-              <a href="" class="customers-link">
-                <svg class="customers-icon">
+
+            <li class="regular-customers__item">
+              <a href="" class="regular-customers__link">
+                <svg class="regular-customers__icon">
                   <use href="images/svg/sprite.svg#icon-client6"></use></svg
               ></a>
             </li>
@@ -509,9 +517,10 @@
       </section>
 
       <!-- footer -->
-      <footer class="down">
-        <div class="conteiner flex-box">
-          <ul class="down-link">
+
+      <footer class="bottom">
+        <div class="conteiner bottom__flex-box">
+          <ul class="lowland-list">
             <li>
               <!--  -->
               <h2 class="top-logo down-logo">
@@ -519,17 +528,21 @@
               </h2>
 
               <address>
-                <ul>
-                  <li class="address down-item">
+                <ul class="location">
+                  <li
+                    class="
+                      location__address location__item location__item--position
+                    "
+                  >
                     г. Киев, пр-т Леси Украинки, 26
                   </li>
-                  <li class="down-item">
-                    <a href="mailto:info@example.com" class="links">
+                  <li class="location__item location__item--position">
+                    <a href="mailto:info@example.com" class="location__link">
                       info@example.com</a
                     >
                   </li>
-                  <li class="down-item">
-                    <a href="tel:+380991111111" class="links"
+                  <li class="location__item location__item--position">
+                    <a href="tel:+380991111111" class="location__link"
                       >+38 099 111 11 11</a
                     >
                   </li>
@@ -538,39 +551,43 @@
             </li>
             <li>
               <!--  -->
-              <div class="footer-div">
-                <h2 class="footer-header">присоединяйтесь</h2>
-                <ul class="team-new-list">
-                  <li class="team-items">
-                    <a href="" class="team-new-links">
-                      <svg class="team-new-svg">
+
+              <div class="footer footer--position">
+                <h2 class="footer__header footer__header--position">
+                  присоединяйтесь
+                </h2>
+
+                <ul class="link-list">
+                  <li class="link-list__item link-list__item--position">
+                    <a href="" class="link-list__link">
+                      <svg class="link-list__svg">
                         <use
                           href="./images/svg/symbol-defs.svg#icon-instagram"
                         ></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="team-items">
-                    <a href="" class="team-new-links">
-                      <svg class="team-new-svg">
+                  <li class="link-list__item link-list__item--position">
+                    <a href="" class="link-list__link">
+                      <svg class="link-list__svg">
                         <use
                           href="./images/svg/symbol-defs.svg#icon-twitter"
                         ></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="team-items">
-                    <a href="" class="team-new-links">
-                      <svg class="team-new-svg">
+                  <li class="link-list__item link-list__item--position">
+                    <a href="" class="link-list__link">
+                      <svg class="link-list__svg">
                         <use
                           href="./images/svg/symbol-defs.svg#icon-facebook"
                         ></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="team-items">
-                    <a href="" class="team-new-links">
-                      <svg class="team-new-svg">
+                  <li class="link-list__item link-list__item--position">
+                    <a href="" class="link-list__link">
+                      <svg class="link-list__svg">
                         <use
                           href="./images/svg/symbol-defs.svg#icon-linkedin"
                         ></use>
@@ -581,19 +598,20 @@
               </div>
             </li>
           </ul>
-          <div class="footer-email">
-            <h2 class="footer-email-header">Подпишитесь на рассылку</h2>
-            <label class="footer-label">
+
+          <div class="subscribe subscribe--position">
+            <h2 class="subscribe__header">Подпишитесь на рассылку</h2>
+            <label class="subscribe__label subscribe__label--position">
               <input
                 type="email"
                 name="mail"
-                class="footer-input"
+                class="subscribe__input subscribe__input--position"
                 placeholder="E-mail"
               />
             </label>
-            <button type="submit" class="footer-submit">
+            <button type="submit" class="subscribe__submit">
               Подписаться
-              <svg class="footer-submit-svg">
+              <svg class="subscribe__icon">
                 <use href="./images/svg/sprite.svg#icon-send-1"></use>
               </svg>
             </button>
