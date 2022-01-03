@@ -64,46 +64,59 @@
         </ul>
       </div>
     </header>
+
     <!-- hero section -->
+
     <main>
-      <section class="hero hero-background">
+      <section class="hero">
         <div class="conteiner">
-          <h1 class="hero-header">Эффективные решения для вашего бизнеса</h1>
-          <button data-modal-open type="button" class="knob">
+          <h1 class="hero__header hero__header--position">
+            Эффективные решения для вашего бизнеса
+          </h1>
+          <button data-modal-open type="button" class="hero__knob">
             Заказать услугу
           </button>
         </div>
       </section>
+
       <!--benefits  -->
 
       <section class="benefits">
         <div class="conteiner">
           <h1 class="visually-hidden">секция организации и планирования</h1>
-          <ul class="benefits-list">
-            <li class="benefits-item antenna">
-              <h2 class="benefints-header">Внимание к деталям</h2>
-              <p class="benefits-text">
+          <ul class="benefits__list">
+            <li class="benefits__item benefits__item--position antenna">
+              <h2 class="benefints__header benefints__header--position">
+                Внимание к деталям
+              </h2>
+              <p class="benefits__text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="benefits-item clock">
-              <h2 class="benefints-header">Пунктуальность</h2>
-              <p class="benefits-text">
+            <li class="benefits__item benefits__item--position clock">
+              <h2 class="benefints__header benefints__header--position">
+                Пунктуальность
+              </h2>
+              <p class="benefits__text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="benefits-item diagram">
-              <h2 class="benefints-header">Планирование</h2>
-              <p class="benefits-text">
+            <li class="benefits__item benefits__item--position diagram">
+              <h2 class="benefints__header benefints__header--position">
+                Планирование
+              </h2>
+              <p class="benefits__text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="benefits-item astronaut">
-              <h2 class="benefints-header">Современные технологии</h2>
-              <p class="benefits-text">
+            <li class="benefits__item benefits__item--position astronaut">
+              <h2 class="benefints__header benefints__header--position">
+                Современные технологии
+              </h2>
+              <p class="benefits__text">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
               </p>
@@ -111,41 +124,51 @@
           </ul>
         </div>
       </section>
+
       <!-- work section -->
+
       <section class="work">
         <div class="conteiner">
-          <h2 class="work-title">Чем мы занимаемся</h2>
-          <ul class="work-list">
-            <li class="work-item">
+          <h2 class="work__title work__title--position">Чем мы занимаемся</h2>
+          <ul class="projects">
+            <li class="projects__item projects__item--position">
               <img
                 src="./images/our-work/box1.jpg"
                 alt="Написание верстки"
                 width="370"
               />
-              <div class="work-model">
-                <p class="work-model-text">Десктопные приложения</p>
+              <div class="projects__wrap">
+                <p class="projects__text projects__text--position">
+                  Десктопные приложения
+                </p>
               </div>
             </li>
-            <li class="work-item">
+
+            <li class="projects__item projects__item--position">
               <img
                 src="./images/our-work/box2.jpg"
                 alt="Подстройка сайта под телефон
               "
                 width="370"
               />
-              <div class="work-model">
-                <p class="work-model-text">Мобильные приложения</p>
+              <div class="projects__wrap">
+                <p class="projects__text projects__text--position">
+                  Мобильные приложения
+                </p>
               </div>
             </li>
-            <li class="work-item">
+
+            <li class="projects__item projects__item--position">
               <img
                 src="./images/our-work/box3.jpg"
                 alt="Проектирование дизайна
               "
                 width="370"
               />
-              <div class="work-model">
-                <p class="work-model-text">Дизайнерские решения</p>
+              <div class="projects__wrap">
+                <p class="projects__text projects__text--position">
+                  Дизайнерские решения
+                </p>
               </div>
             </li>
           </ul>
@@ -153,54 +176,73 @@
       </section>
 
       <!-- team section -->
+
       <section class="team">
         <div class="conteiner">
-          <h2 class="team-header">Наша команда</h2>
-          <ul class="team-border">
-            <li class="team-item">
+          <h2 class="team__header">Наша команда</h2>
+
+          <ul class="members">
+            <!-- Игорь Демьяненко -->
+
+            <li class="members__item members__item--position">
               <img
                 src="./images/our-team/img1.jpg"
                 alt="Игорь Демьяненко"
                 width="270"
               />
 
-              <div class="team-panel">
-                <h3 class="team-member">Игорь Демьяненко</h3>
+              <div class="team__meta team__meta--position">
+                <h3 class="members__person members__person--position">
+                  Игорь Демьяненко
+                </h3>
 
-                <p class="team-role">Product Designer</p>
+                <p class="members__role">Product Designer</p>
               </div>
 
-              <ul class="team-lists">
-                <li class="team-items">
-                  <a href="" class="team-links">
-                    <svg class="team-svg">
+              <!--  social-networks -->
+
+              <ul class="social-networks">
+                <li
+                  class="social-networks__item social-networks__item--position"
+                >
+                  <a href="" class="social-networks__link">
+                    <svg class="social-networks-icon">
                       <use
                         href="./images/svg/symbol-defs.svg#icon-instagram"
                       ></use>
                     </svg>
                   </a>
                 </li>
-                <li class="team-items">
-                  <a href="" class="team-links">
-                    <svg class="team-svg">
+
+                <li
+                  class="social-networks__item social-networks__item--position"
+                >
+                  <a href="" class="social-networks__link">
+                    <svg class="social-networks-icon">
                       <use
                         href="./images/svg/symbol-defs.svg#icon-twitter"
                       ></use>
                     </svg>
                   </a>
                 </li>
-                <li class="team-items">
-                  <a href="" class="team-links">
-                    <svg class="team-svg">
+
+                <li
+                  class="social-networks__item social-networks__item--position"
+                >
+                  <a href="" class="social-networks__link">
+                    <svg class="social-networks-icon">
                       <use
                         href="./images/svg/symbol-defs.svg#icon-facebook"
                       ></use>
                     </svg>
                   </a>
                 </li>
-                <li class="team-items">
-                  <a href="" class="team-links">
-                    <svg class="team-svg">
+
+                <li
+                  class="social-networks__item social-networks__item--position"
+                >
+                  <a href="" class="social-networks__link">
+                    <svg class="social-networks-icon">
                       <use
                         href="./images/svg/symbol-defs.svg#icon-linkedin"
                       ></use>
@@ -210,49 +252,66 @@
               </ul>
             </li>
 
-            <li class="team-item">
+            <!-- Ольга Репина -->
+
+            <li class="members__item members__item--position">
               <img
                 src="./images/our-team/img2.jpg"
                 alt="Ольга Репина"
                 width="270"
               />
-              <div class="team-panel">
-                <h3 class="team-member">Ольга Репина</h3>
+              <div class="team__meta team__meta--position">
+                <h3 class="members__person members__person--position">
+                  Ольга Репина
+                </h3>
 
-                <p class="team-role">Frontend Developer</p>
+                <p class="members__role">Frontend Developer</p>
               </div>
 
-              <ul class="team-lists">
-                <li class="team-items">
-                  <a href="" class="team-links">
-                    <svg class="team-svg">
+              <!--  social-networks -->
+
+              <ul class="social-networks">
+                <li
+                  class="social-networks__item social-networks__item--position"
+                >
+                  <a href="" class="social-networks__link">
+                    <svg class="social-networks-icon">
                       <use
                         href="./images/svg/symbol-defs.svg#icon-instagram"
                       ></use>
                     </svg>
                   </a>
                 </li>
-                <li class="team-items">
-                  <a href="" class="team-links">
-                    <svg class="team-svg">
+
+                <li
+                  class="social-networks__item social-networks__item--position"
+                >
+                  <a href="" class="social-networks__link">
+                    <svg class="social-networks-icon">
                       <use
                         href="./images/svg/symbol-defs.svg#icon-twitter"
                       ></use>
                     </svg>
                   </a>
                 </li>
-                <li class="team-items">
-                  <a href="" class="team-links">
-                    <svg class="team-svg">
+
+                <li
+                  class="social-networks__item social-networks__item--position"
+                >
+                  <a href="" class="social-networks__link">
+                    <svg class="social-networks-icon">
                       <use
                         href="./images/svg/symbol-defs.svg#icon-facebook"
                       ></use>
                     </svg>
                   </a>
                 </li>
-                <li class="team-items">
-                  <a href="" class="team-links">
-                    <svg class="team-svg">
+
+                <li
+                  class="social-networks__item social-networks__item--position"
+                >
+                  <a href="" class="social-networks__link">
+                    <svg class="social-networks-icon">
                       <use
                         href="./images/svg/symbol-defs.svg#icon-linkedin"
                       ></use>
@@ -262,49 +321,66 @@
               </ul>
             </li>
 
-            <li class="team-item">
+            <!-- Николай Тарасов -->
+
+            <li class="members__item members__item--position">
               <img
                 src="./images/our-team/img3.jpg"
                 alt="Николай Тарасов"
                 width="270"
               />
-              <div class="team-panel">
-                <h3 class="team-member">Николай Тарасов</h3>
+              <div class="team__meta team__meta--position">
+                <h3 class="members__person members__person--position">
+                  Николай Тарасов
+                </h3>
 
-                <p class="team-role">Marketing</p>
+                <p class="members__role">Marketing</p>
               </div>
 
-              <ul class="team-lists">
-                <li class="team-items">
-                  <a href="" class="team-links">
-                    <svg class="team-svg">
+              <!--  social-networks -->
+
+              <ul class="social-networks">
+                <li
+                  class="social-networks__item social-networks__item--position"
+                >
+                  <a href="" class="social-networks__link">
+                    <svg class="social-networks-icon">
                       <use
                         href="./images/svg/symbol-defs.svg#icon-instagram"
                       ></use>
                     </svg>
                   </a>
                 </li>
-                <li class="team-items">
-                  <a href="" class="team-links">
-                    <svg class="team-svg">
+
+                <li
+                  class="social-networks__item social-networks__item--position"
+                >
+                  <a href="" class="social-networks__link">
+                    <svg class="social-networks-icon">
                       <use
                         href="./images/svg/symbol-defs.svg#icon-twitter"
                       ></use>
                     </svg>
                   </a>
                 </li>
-                <li class="team-items">
-                  <a href="" class="team-links">
-                    <svg class="team-svg">
+
+                <li
+                  class="social-networks__item social-networks__item--position"
+                >
+                  <a href="" class="social-networks__link">
+                    <svg class="social-networks-icon">
                       <use
                         href="./images/svg/symbol-defs.svg#icon-facebook"
                       ></use>
                     </svg>
                   </a>
                 </li>
-                <li class="team-items">
-                  <a href="" class="team-links">
-                    <svg class="team-svg">
+
+                <li
+                  class="social-networks__item social-networks__item--position"
+                >
+                  <a href="" class="social-networks__link">
+                    <svg class="social-networks-icon">
                       <use
                         href="./images/svg/symbol-defs.svg#icon-linkedin"
                       ></use>
@@ -313,49 +389,67 @@
                 </li>
               </ul>
             </li>
-            <li class="team-item">
+
+            <!-- Михаил Ермаков -->
+
+            <li class="members__item members__item--position">
               <img
                 src="./images/our-team/img4.jpg"
                 alt="Михаил Ермаков"
                 width="270"
               />
-              <div class="team-panel">
-                <h3 class="team-member">Михаил Ермаков</h3>
+              <div class="team__meta team__meta--position">
+                <h3 class="members__person members__person--position">
+                  Михаил Ермаков
+                </h3>
 
-                <p class="team-role">UI Designer</p>
+                <p class="members__role">UI Designer</p>
               </div>
 
-              <ul class="team-lists">
-                <li class="team-items">
-                  <a href="" class="team-links">
-                    <svg class="team-svg">
+              <!--  social-networks -->
+
+              <ul class="social-networks">
+                <li
+                  class="social-networks__item social-networks__item--position"
+                >
+                  <a href="" class="social-networks__link">
+                    <svg class="social-networks-icon">
                       <use
                         href="./images/svg/symbol-defs.svg#icon-instagram"
                       ></use>
                     </svg>
                   </a>
                 </li>
-                <li class="team-items">
-                  <a href="" class="team-links">
-                    <svg class="team-svg">
+
+                <li
+                  class="social-networks__item social-networks__item--position"
+                >
+                  <a href="" class="social-networks__link">
+                    <svg class="social-networks-icon">
                       <use
                         href="./images/svg/symbol-defs.svg#icon-twitter"
                       ></use>
                     </svg>
                   </a>
                 </li>
-                <li class="team-items">
-                  <a href="" class="team-links">
-                    <svg class="team-svg">
+
+                <li
+                  class="social-networks__item social-networks__item--position"
+                >
+                  <a href="" class="social-networks__link">
+                    <svg class="social-networks-icon">
                       <use
                         href="./images/svg/symbol-defs.svg#icon-facebook"
                       ></use>
                     </svg>
                   </a>
                 </li>
-                <li class="team-items">
-                  <a href="" class="team-links">
-                    <svg class="team-svg">
+
+                <li
+                  class="social-networks__item social-networks__item--position"
+                >
+                  <a href="" class="social-networks__link">
+                    <svg class="social-networks-icon">
                       <use
                         href="./images/svg/symbol-defs.svg#icon-linkedin"
                       ></use>
@@ -367,7 +461,9 @@
           </ul>
         </div>
       </section>
+
       <!-- customers -->
+
       <section class="customers">
         <div class="conteiner">
           <h2 class="customers-header">Постоянные клиенты</h2>
