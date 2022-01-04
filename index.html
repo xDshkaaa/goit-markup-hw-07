@@ -599,7 +599,7 @@
             </li>
           </ul>
 
-          <div class="subscribe subscribe--position">
+          <form class="subscribe subscribe--position">
             <h2 class="subscribe__header">Подпишитесь на рассылку</h2>
             <label class="subscribe__label subscribe__label--position">
               <input
@@ -615,7 +615,7 @@
                 <use href="./images/svg/sprite.svg#icon-send-1"></use>
               </svg>
             </button>
-          </div>
+          </form>
         </div>
       </footer>
     </main>
@@ -624,25 +624,25 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal conteiner-box">
-        <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
-        <form action="" class="modal-form">
-          <label for="name" class="modal-label"
+        <p class="modal__text">Оставьте свои данные, мы вам перезвоним</p>
+        <form action="" class="modal__form modal__form--position">
+          <label for="name" class="modal__label"
             >Имя
             <input
               type="text"
               name="name"
               id="name"
-              class="modal-input"
+              class="modal__input"
               required
               autofocus
             />
 
-            <svg class="model-icon-box">
+            <svg class="modal__icon">
               <use href="./images/svg/sprite.svg#icon-person-1"></use>
             </svg>
           </label>
 
-          <label for="tel" class="modal-label"
+          <label for="tel" class="modal__label"
             >Телефон
 
             <input
@@ -650,56 +650,56 @@
               type="tel"
               name="tel"
               id="tel"
-              class="modal-input"
+              class="modal__input"
               pattern="[0-9]{10}"
             />
-            <svg class="model-icon-box">
+            <svg class="modal__icon">
               <use href="./images/svg/sprite.svg#icon-phone-1"></use>
             </svg>
           </label>
 
-          <label for="mail" class="modal-label"
+          <label for="mail" class="modal__label"
             >Почта
             <input
               type="email"
               name="mail"
               id="mail"
-              class="modal-input"
+              class="modal__input"
               required
             />
 
-            <svg class="model-icon-box">
+            <svg class="modal__icon">
               <use href="./images/svg/sprite.svg#icon-email-1"></use>
             </svg>
           </label>
 
-          <label for="textarea" class="modal-label textarea">
-            Комментарий</label
-          >
+          <label for="textarea" class="modal__label"> Комментарий</label>
           <textarea
             name="textarea"
             id="textarea"
-            class="modal-input ggg"
+            class="modal__input modal__textarea"
             placeholder="Введите текст"
           ></textarea>
 
-          <label for="checkbox" class="checkbox-box">
+          <label for="checkbox" class="modal__checkbox-label">
             <input
-              class="checkbox-text"
+              class="modal__checkbox-text"
               type="checkbox"
               name="checkbox"
               id="checkbox"
             />
-            <span class="model-icon"></span>
-            <span class="model-sup">Соглашаюсь с рассылкой и принимаю</span>
+            <span class="modal__icon-checkbox"></span>
+            <span class="modal__content"
+              >Соглашаюсь с рассылкой и принимаю</span
+            >
 
-            <a href="" class="checkbox-link">Условия договора</a>
+            <a href="" class="modal__checkbox-link">Условия договора</a>
           </label>
 
-          <button type="submit" class="modal-btn">Отправить</button>
+          <button type="submit" class="modal__btn">Отправить</button>
         </form>
-        <button data-modal-close type="button" class="backdrop-btn">
-          <svg class="backdrop-svg">
+        <button data-modal-close type="button" class="modal__backdrop-btn">
+          <svg class="modal__backdrop-svg">
             <use href="./images/svg/sprite.svg#icon-close-black"></use>
           </svg>
         </button>
